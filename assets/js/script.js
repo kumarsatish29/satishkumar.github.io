@@ -200,7 +200,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 });
 
 /*==================== GITHUB CALENDAR ====================*/
-GitHubCalendar(".calendar", "sanajitjana", {
+GitHubCalendar(".calendar", "kumarsatish29", {
   responsive: true,
   global_stats: false,
   tooltips: true,
