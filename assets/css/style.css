@@ -236,6 +236,7 @@ img {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  
 }
 
 .nav__logo:hover {
@@ -246,6 +247,11 @@ img {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+.nav__logo img {
+    width: 55px; /* Adjust the width as desired */
+    height: auto; /* Maintain aspect ratio */
+  }
 
 .nav__toggle:hover {
   color: var(--first-color);
