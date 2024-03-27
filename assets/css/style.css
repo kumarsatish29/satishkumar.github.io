@@ -586,6 +586,27 @@ img {
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
+.experience__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+ul.a {
+  list-style-type: circle;
+}
+.experience__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+.experience__description {
+  width: 100%;
+  padding-bottom: 20px;
+}
 
 .qualification__content[data-content] {
   display: none;

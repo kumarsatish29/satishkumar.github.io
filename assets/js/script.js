@@ -126,8 +126,14 @@ function preLoader() {
 }
 
 /*==================== END EMAIL VIA emailJs ====================*/
+
 const sendEmail = (params) => {
-  const serviceID = "service_r020v1i";
+
+  emailjs.init({
+    publicKey: "2AQpC6BiqauqMyOpZ",
+  });
+
+  const serviceID = "service_ns3sar6";
   const templateID = "template_u610vko";
 
   emailjs
@@ -163,7 +169,10 @@ const validateEmail = (email, params) => {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      if (data.deliverability == "DELIVERABLE") sendEmail(params);
+      if (data.deliverability == "DELIVERABLE") {
+        console.log('validation done')
+        sendEmail(params);
+      }
       else {
         alert("Invalid email address");
         document.getElementById("email-submit").innerHTML = `
@@ -187,6 +196,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const isEmail = emailRegex.test(email);
+  console.info('done')
 
   //validate email
   if (!isEmail) {
@@ -196,7 +206,9 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
   const params = { name: name, email: email, message: message };
   document.getElementById("email-submit").innerText = "Sending...";
+  console.log('vakid')
   validateEmail(email, params);
+
 });
 
 /*==================== GITHUB CALENDAR ====================*/
