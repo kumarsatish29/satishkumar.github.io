@@ -4,7 +4,7 @@
   </a>
 </div>
 <h1 align="center">
-  satishkumar.github.io - v1
+  satishkumar.github.io - v2
 </h1>
 <p align="center">
   The second iteration of <a href="https://kumarsatish29.github.io/satishkumar.github.io/o" target="_blank">satishkumar.github.io</a> built with HTML, CSS, JavaScript and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
